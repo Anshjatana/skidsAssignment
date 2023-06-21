@@ -33,7 +33,7 @@ const EditUserForm = ({ user, updateUser, closeModal }) => {
   return (
     <div className="editFormDiv">
       <h1>Edit User</h1>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} id="editUserForm">
         <input
           type="text"
           placeholder="Name"

@@ -37,7 +37,7 @@ body {
 #inputPhone {
   padding: 10px;
   font-size: 20px;
-  margin: 50px 10px;
+  margin: 15px;
   border-radius: 15px;
 }
 #addUser {
@@ -49,6 +49,9 @@ body {
   font-size: 17px;
   cursor: pointer;
   margin: 10px;
+}
+#addUserForm {
+  margin: 40px 10px;
 }
 /* List CSS */
 .userList {
@@ -70,7 +73,7 @@ body {
 }
 #listName {
   font-weight: bold;
-  font-size: 23px;
+  font-size: 22px;
   margin: 5px;
 }
 #listEmail {
@@ -81,7 +84,7 @@ body {
 #listPhone {
   font-weight: 400;
   font-size: 22px;
-  margin: 5px;
+  margin: 4px;
 }
 #editBtn {
   width: 33%;
@@ -114,6 +117,8 @@ body {
 .userListDiv {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Edit Form List CSS */
@@ -160,4 +165,39 @@ body {
   border-radius: 11px;
   margin: 10px;
   cursor: pointer;
+}
+/* Media queries for responsiveness */
+
+@media (max-width: 940px) {
+  #addUserForm #inputName,
+  #inputEmail,
+  #inputPhone {
+    font-size: 17px;
+  }
+  .userList {
+    width: 349px;
+  }
+}
+@media (max-width: 636px) {
+  #addUserForm {
+    margin: 40px 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  #editUserForm {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 414px) {
+  .userList {
+    margin-left: 7px;
+    width: 317px;
+  }
+
+  #listName,
+  #listEmail,
+  #listPhone {
+    font-size: 20px;
+  }
 }

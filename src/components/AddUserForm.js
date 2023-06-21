@@ -33,7 +33,7 @@ const AddUserForm = ({ addUser }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} id="addUserForm">
       <input
         type="text"
         placeholder="Name"
